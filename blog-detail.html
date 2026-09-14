@@ -3,12 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <meta
       name="description"
       content="Panduan deployment web application menggunakan Docker dan NGINX pada server sendiri."
     />
-
     <title>Detail Blog</title>
 
     <style>
@@ -18,17 +16,14 @@
         height: auto;
       }
 
-      .info-table {
+      .info-table,
+      .comment-table {
         border-collapse: collapse;
       }
 
       .info-table td {
         padding: 8px;
         vertical-align: middle;
-      }
-
-      .comment-table {
-        border-collapse: collapse;
       }
 
       .comment-table td {
@@ -48,7 +43,6 @@
   </head>
 
   <body>
-    <!-- Navigasi -->
     <nav>
       <p>
         <a href="index.html">IMDb Movies</a> |
@@ -60,13 +54,15 @@
 
     <hr />
 
-    <!-- Konten Utama -->
     <main>
       <!-- Cover Image -->
       <img
         class="cover-image"
         src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fk8sq4oiy0stnozjd1xgs.png"
+        width="1000"
+        height="420"
         alt="Cover Image"
+        fetchpriority="high"
       />
 
       <!-- Informasi Author -->
@@ -90,7 +86,6 @@
         </tr>
       </table>
 
-      <!-- Judul Blog -->
       <h1>
         How to Deploy a Web Application Using Docker and NGINX on Your Own
         Server
@@ -100,7 +95,6 @@
 
       <hr />
 
-      <!-- Isi Blog -->
       <p>
         Deploying a web application doesn't need to be a complicated process.
         With Docker, NGINX, and your own server, you can get your app live in no
@@ -110,7 +104,6 @@
         container. This guide is specifically tailored for a Linux-based server.
       </p>
 
-      <!-- Step 1 -->
       <h2>Step 1: Setup Docker</h2>
 
       <p>
@@ -128,9 +121,9 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 CMD [ "npm", "start" ]
-</pre>
+</pre
+      >
 
-      <!-- Step 2 -->
       <h2>Step 2: Build and Run the Docker Container (on your server)</h2>
 
       <p>
@@ -138,7 +131,6 @@ CMD [ "npm", "start" ]
         Docker image and run it to make sure everything is working as expected.
       </p>
 
-      <!-- Conclusion -->
       <h2>Conclusion</h2>
 
       <p>
@@ -152,7 +144,6 @@ CMD [ "npm", "start" ]
 
       <hr />
 
-      <!-- Komentar -->
       <h2>Top comments (0)</h2>
 
       <table class="comment-table">

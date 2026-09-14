@@ -3,12 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <meta
       name="description"
       content="Daftar tiga film terbaik berdasarkan peringkat IMDb."
     />
-
     <title>IMDb Top 3 Movies</title>
 
     <style>
@@ -28,7 +26,6 @@
   </head>
 
   <body>
-    <!-- Navigasi -->
     <nav>
       <p>
         <a href="index.html">IMDb Movies</a> |
@@ -40,13 +37,11 @@
 
     <hr />
 
-    <!-- Konten Utama -->
     <main>
       <h1>IMDB Top 3 Movies</h1>
 
       <hr />
 
-      <!-- Film 1 -->
       <table>
         <tr>
           <td>
@@ -55,6 +50,7 @@
               width="72"
               height="107"
               alt="The Shawshank Redemption"
+              fetchpriority="high"
             />
           </td>
 
@@ -62,8 +58,7 @@
             <h2>1. The Shawshank Redemption</h2>
 
             <p>
-              <span>1994</span> &nbsp;&nbsp;
-              <span>2h 22m</span> &nbsp;&nbsp;
+              <span>1994</span> &nbsp;&nbsp; <span>2h 22m</span> &nbsp;&nbsp;
               <span>15</span>
             </p>
 
@@ -71,7 +66,6 @@
           </td>
         </tr>
 
-        <!-- Film 2 -->
         <tr>
           <td>
             <img
@@ -79,6 +73,8 @@
               width="72"
               height="107"
               alt="The Godfather"
+              loading="lazy"
+              decoding="async"
             />
           </td>
 
@@ -86,8 +82,7 @@
             <h2>2. The Godfather</h2>
 
             <p>
-              <span>1972</span> &nbsp;&nbsp;
-              <span>2h 55m</span> &nbsp;&nbsp;
+              <span>1972</span> &nbsp;&nbsp; <span>2h 55m</span> &nbsp;&nbsp;
               <span>15</span>
             </p>
 
@@ -95,7 +90,6 @@
           </td>
         </tr>
 
-        <!-- Film 3 -->
         <tr>
           <td>
             <img
@@ -103,6 +97,8 @@
               width="72"
               height="107"
               alt="The Dark Knight"
+              loading="lazy"
+              decoding="async"
             />
           </td>
 
@@ -110,8 +106,7 @@
             <h2>3. The Dark Knight</h2>
 
             <p>
-              <span>2008</span> &nbsp;&nbsp;
-              <span>2h 32m</span> &nbsp;&nbsp;
+              <span>2008</span> &nbsp;&nbsp; <span>2h 32m</span> &nbsp;&nbsp;
               <span>12A</span>
             </p>
 

@@ -3,12 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <meta
       name="description"
       content="Curriculum Vitae dan portfolio mahasiswa Informatika."
     />
-
     <title>Curriculum Vitae</title>
 
     <style>
@@ -24,14 +22,15 @@
 
       .profile-photo {
         display: block;
+        width: 200px;
+        height: 200px;
         max-width: 100%;
-        height: auto;
+        object-fit: cover;
       }
     </style>
   </head>
 
   <body>
-    <!-- Navigasi -->
     <nav>
       <p>
         <a href="index.html">IMDb Movies</a> |
@@ -43,10 +42,8 @@
 
     <hr />
 
-    <!-- Konten Utama -->
     <main>
       <table class="cv-table">
-        <!-- Bagian Header CV -->
         <tr>
           <td>
             <img
@@ -55,6 +52,7 @@
               width="200"
               height="200"
               alt="Foto Profil"
+              fetchpriority="high"
             />
           </td>
 
@@ -75,9 +73,7 @@
           </td>
         </tr>
 
-        <!-- Bagian Konten CV -->
         <tr>
-          <!-- Kolom Kiri -->
           <td>
             <hr />
 
@@ -113,7 +109,6 @@
             </ol>
           </td>
 
-          <!-- Kolom Kanan -->
           <td>
             <hr />
 
