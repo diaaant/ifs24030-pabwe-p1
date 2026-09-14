@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Form Pendaftaran Akun</title>
+  </head>
+  <body>
+    <!-- Navigasi Integrasi Proyek -->
+    <p>
+      <a href="index.html">IMDb Movies</a> | <a href="blog.html">Dev Blogs</a> |
+      <a href="form.html">Form Pendaftaran</a> |
+      <a href="cv.html">Curriculum Vitae</a>
+    </p>
+    <hr />
+
+    <!-- Konten Utama -->
+    <form action="#" method="POST">
+      <fieldset>
+        <legend>Daftar Akun</legend>
+        <table cellpadding="5">
+          <tr>
+            <td>Nama Lengkap:</td>
+            <td><input type="text" name="nama" /></td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin:</td>
+            <td>
+              <input type="radio" name="gender" value="Laki-Laki" /> Laki-Laki
+              <input type="radio" name="gender" value="Perempuan" /> Perempuan
+            </td>
+          </tr>
+          <tr>
+            <td>Tempat Lahir:</td>
+            <td><input type="text" name="tempat_lahir" /></td>
+          </tr>
+          <tr>
+            <td>Tanggal Lahir:</td>
+            <td><input type="date" name="tanggal_lahir" /></td>
+          </tr>
+          <tr>
+            <td>Agama:</td>
+            <td>
+              <select name="agama">
+                <option value="">-- Pilih Agama --</option>
+                <option value="Islam">Islam</option>
+                <option value="Katolik">Katolik</option>
+                <option value="Protestan">Protestan</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Buddha">Buddha</option>
+                <option value="Konghucu">Konghucu</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Hobi:</td>
+            <td>
+              <input type="checkbox" name="hobi" value="Olahraga" /> Olahraga
+              <input type="checkbox" name="hobi" value="Membaca" /> Membaca
+              <input type="checkbox" name="hobi" value="Ngoding" /> Ngoding
+            </td>
+          </tr>
+          <tr>
+            <td>Password:</td>
+            <td><input type="password" name="password" /></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <hr />
+              <input type="checkbox" name="persetujuan" /> Dengan mendaftar saya
+              setuju dengan Ketentuan dan Kebijakan Privasi Aplikasi.
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="reset" value="Reset" />
+              <input type="submit" value="Submit" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
