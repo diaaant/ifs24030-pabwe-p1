@@ -55,7 +55,6 @@
     <hr />
 
     <main>
-      <!-- Cover Image -->
       <img
         class="cover-image"
         src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fk8sq4oiy0stnozjd1xgs.png"
@@ -63,9 +62,9 @@
         height="420"
         alt="Cover Image"
         fetchpriority="high"
+        decoding="async"
       />
 
-      <!-- Informasi Author -->
       <table class="info-table">
         <tr>
           <td>
@@ -75,6 +74,7 @@
               width="32"
               height="32"
               alt="Author"
+              decoding="async"
             />
           </td>
 
@@ -121,8 +121,7 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 CMD [ "npm", "start" ]
-</pre
-      >
+</pre>
 
       <h2>Step 2: Build and Run the Docker Container (on your server)</h2>
 
@@ -155,6 +154,7 @@ CMD [ "npm", "start" ]
               width="32"
               height="32"
               alt="User Comment Profile"
+              decoding="async"
             />
           </td>
 
