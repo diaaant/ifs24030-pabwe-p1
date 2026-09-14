@@ -1,9 +1,9 @@
-```html id="8j5f2m"
 <!doctype html>
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta
       name="description"
       content="Panduan deployment web application menggunakan Docker dan NGINX pada server sendiri."
@@ -42,6 +42,7 @@
 
       .comment-box {
         resize: vertical;
+        max-width: 100%;
       }
     </style>
   </head>
@@ -127,8 +128,7 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 CMD [ "npm", "start" ]
-</pre
-      >
+</pre>
 
       <!-- Step 2 -->
       <h2>Step 2: Build and Run the Docker Container (on your server)</h2>
@@ -173,6 +173,7 @@ CMD [ "npm", "start" ]
               rows="3"
               cols="40"
               placeholder="Add to the discussion"
+              aria-label="Kolom komentar"
             ></textarea>
           </td>
         </tr>
@@ -180,4 +181,3 @@ CMD [ "npm", "start" ]
     </main>
   </body>
 </html>
-```
