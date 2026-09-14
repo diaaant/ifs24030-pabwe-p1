@@ -2,7 +2,32 @@
 <!doctype html>
 <html lang="id">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Curriculum Vitae dan portfolio mahasiswa Informatika."
+    />
+
     <title>Curriculum Vitae</title>
+
+    <style>
+      .cv-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .cv-table td {
+        padding: 10px;
+        vertical-align: top;
+      }
+
+      .profile-photo {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
   </head>
 
   <body>
@@ -20,18 +45,20 @@
 
     <!-- Konten Utama -->
     <main>
-      <table width="100%" cellpadding="10">
+      <table class="cv-table">
         <!-- Bagian Header CV -->
         <tr>
-          <td width="30%" valign="top">
+          <td>
             <img
+              class="profile-photo"
               src="https://th.bing.com/th/id/OIP.9wRm_mWOdBSxlhrmzS2yBQHaHa?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
               width="200"
+              height="200"
               alt="Foto Profil"
             />
           </td>
 
-          <td width="70%" valign="top">
+          <td>
             <h1>Dian Rafael Tambunan</h1>
 
             <h2>Sarjana Informatika</h2>
@@ -51,7 +78,7 @@
         <!-- Bagian Konten CV -->
         <tr>
           <!-- Kolom Kiri -->
-          <td valign="top">
+          <td>
             <hr />
 
             <h2>Pendidikan</h2>
@@ -87,7 +114,7 @@
           </td>
 
           <!-- Kolom Kanan -->
-          <td valign="top">
+          <td>
             <hr />
 
             <h2>Keahlian</h2>
